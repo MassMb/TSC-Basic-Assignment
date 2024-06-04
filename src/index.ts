@@ -16,14 +16,33 @@ function runExerciseOne() {
 }
 
 function runExerciseTwo() {
+
     const firstName: string = readLine("Enter your First Name: ")
     const lastName: string = readLine("Enter your Last Name: ")
     console.log(`Hello ${firstName} ${lastName}! Have a nice day!`);
+
 }
 
-function runExerciseThree() {}
+function runExerciseThree() {
 
-function runExerciseFour() {}   
+    const num1: number = 2;
+    const num2: number = 26.8;
+
+    const result: number =  num2 / num1;
+
+    console.log(`The Result is : ${result}`);
+}
+
+function runExerciseFour() {
+
+    const radius = parseInt(readLine("Enter Value of a radius: "));
+    const circleArea: number = Math.PI * Math.pow(radius, 2);
+    console.log(`Area of the circle is: ${circleArea}`);
+
+    const sphereArea: number = 4 * Math.PI * Math.pow(radius, 2);
+    console.log(`Area of the Sphere is: ${sphereArea}`);
+
+}   
 
 function runExerciseFive() {}
 
