@@ -44,9 +44,26 @@ function runExerciseFour() {
 
 }   
 
-function runExerciseFive() {}
+function runExerciseFive() {
+    const inputNum1: number = parseInt(readLine("Enter first number: "));
+    const inputNum2: number = parseInt(readLine("Enter second number: "));
 
-function runExerciseSix() {}
+    if (inputNum1 + 1 === inputNum2) {
+        console.log(`${inputNum1} and ${inputNum2} are Consecutive`)
+    } else {
+        console.log(`${inputNum1} and ${inputNum2} are not consecutive`)
+    }
+}
+
+function runExerciseSix() {
+    const userNum1: number = parseInt(readLine("Enter any number: "));
+
+    if (userNum1 % 2 === 0) {
+        console.log(`Number ${userNum1} is even`)
+    } else {
+        console.log(`Number ${userNum1} is odd`)
+    }
+}
 
 function runExerciseSeven() {}
 
