@@ -101,9 +101,17 @@ function runExerciseEight() {
     }
 }
 
-// ############## Exercise 9 ####################################
+// ############## Exercise 9  Palindrome ####################################
 function runExerciseNine() {
+    let userInput: string = readLine("Enter your grade plaese: ").toLowerCase();
+    let palindrome: string = userInput.split("").reverse().join("").toLowerCase();
+    // console.log(palindrome);
 
+    if (userInput === palindrome) {
+        console.log(`${userInput}: is a Palindrome`);
+    } else {
+        console.log(`${userInput}: is not a Palindrom`);
+    }
 }
 
 // ############## Exercise 10 ####################################
