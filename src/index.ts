@@ -103,7 +103,7 @@ function runExerciseEight() {
 
 // ############## Exercise 9  Palindrome ####################################
 function runExerciseNine() {
-    let userInput: string = readLine("Enter your grade plaese: ").toLowerCase();
+    let userInput: string = readLine("Enter any string: ").toLowerCase();
     let palindrome: string = userInput.split("").reverse().join("").toLowerCase();
     // console.log(palindrome);
 
