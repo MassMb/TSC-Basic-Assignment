@@ -6,15 +6,17 @@ import prompt from "prompt-sync";
 // Use the following function to read input from the user:
 const readLine = prompt({ sigint: true });
 
+// ############## Exercise 1 ####################################
 function runExerciseOne() {
 
     const firstName: string = "Mass";
     const lastName: string = "Mbye";
 
-    console.log(`Hello ${firstName} ${lastName} I am glad to inform you that you re the `);
+    console.log(`Hello ${firstName} ${lastName} I am glad to inform you that you are the test subject of my very first assignment`);
 
 }
 
+// ############## Exercise 2 Greeting ####################################
 function runExerciseTwo() {
 
     const firstName: string = readLine("Enter your First Name: ")
@@ -23,6 +25,7 @@ function runExerciseTwo() {
 
 }
 
+// ############## Exercise 3 Decimal point numbers ####################################
 function runExerciseThree() {
 
     const num1: number = 2;
@@ -33,9 +36,10 @@ function runExerciseThree() {
     console.log(`The Result is : ${result}`);
 }
 
+// ############## Exercise 4 Circle and Sphere  Area ###############################
 function runExerciseFour() {
 
-    const radius = parseInt(readLine("Enter Value of a radius: "));
+    const radius: number = parseInt(readLine("Enter Value of a radius: "));
     const circleArea: number = Math.PI * Math.pow(radius, 2);
     console.log(`Area of the circle is: ${circleArea}`);
 
@@ -44,6 +48,7 @@ function runExerciseFour() {
 
 }   
 
+// ############## Exercise 5 Consecutive and Non Censecutive ########################
 function runExerciseFive() {
     const inputNum1: number = parseInt(readLine("Enter first number: "));
     const inputNum2: number = parseInt(readLine("Enter second number: "));
@@ -55,6 +60,7 @@ function runExerciseFive() {
     }
 }
 
+// ############## Exercise 6 Odd or Even ####################################
 function runExerciseSix() {
     const userNum1: number = parseInt(readLine("Enter any number: "));
 
@@ -65,13 +71,45 @@ function runExerciseSix() {
     }
 }
 
-function runExerciseSeven() {}
+// ############## Exercise 7 Body Temperature ####################################
+function runExerciseSeven() {
+    const bodyTemp: number = parseInt(readLine("Enter your body temperature in celsius: "));
 
-function runExerciseEight() {}
+    if (bodyTemp <= 37 ) {
+        console.log(`You have a normal body temperature:  (${bodyTemp}) degree celsius`);
+    } else {
+        console.log(`Your body temperature is high:  (${bodyTemp}) degree celsius`);
+    }
+}
 
-function runExerciseNine() {}
+// ############## Exercise 8 Grade Check ####################################
+function runExerciseEight() {
+    const userGrade: string = readLine("Enter your grade plaese: ").toUpperCase();
 
-function runExerciseTen() {}
+    if (userGrade  === "A" ) {
+        console.log(`Your grade (${userGrade}) is:  Excellent Performance!`);
+    } else if (userGrade  === "A") {
+        console.log(`Your grade (${userGrade}) is:  Very Good Performance!`);
+    } else if (userGrade  === "B") {
+        console.log(`Your grade (${userGrade}) is:  Good Performance!`);
+    }else if (userGrade  === "C") {
+        console.log(`Your grade (${userGrade}) is:  Satisfactory performance!`);
+    }else if (userGrade  === "D") {
+        console.log(`Your grade (${userGrade}) is:  Less than satisfactory performance!`);
+    }else if (userGrade  === "E") {
+        console.log(`Your grade (${userGrade}), You just made it!`);
+    }
+}
+
+// ############## Exercise 9 ####################################
+function runExerciseNine() {
+
+}
+
+// ############## Exercise 10 ####################################
+function runExerciseTen() {
+
+}
 
 /* ^^^^^^^^^^^^  Add the rest of the exercise functions above this line ^^^^^^^^^^^^ */
 
